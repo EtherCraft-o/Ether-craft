@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ether Craft — Curiosidades e segredos do Minecraft</title>
+  <meta name="description" content="Ether Craft — Curiosidades, segredos e dicas estranhas e úteis para jogadores de Minecraft." />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Ether Craft — Curiosidades do Minecraft" />
+  <meta property="og:description" content="Curiosidades, segredos e dicas estranhas e úteis para jogadores de Minecraft." />
+  <meta property="og:type" content="website" />
+  <!-- Fallback favicon (coloque seu favicon em /favicon.ico) -->
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1 class="site-title">🟩 Ether Craft</h1>
+        <p class="site-tagline">Curiosidades, segredos e fatos estranhos do Minecraft</p>
+      </div>
+      <nav class="site-nav" role="navigation" aria-label="Navegação principal">
+        <ul>
+          <li><a href="/">Início</a></li>
+          <li><a href="/recomendacoes.html">Recomendações</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container" role="main">
+    <section class="cards" aria-label="Curiosidades e dicas">
+      <article class="card" aria-labelledby="card1-title">
+        <h2 id="card1-title">👀 Você sabia?</h2>
+        <p>O Creeper surgiu por um erro de programação quando o criador do Minecraft tentou criar um porco com proporções incorretas.</p>
+      </article>
+
+      <article class="card" aria-labelledby="card2-title">
+        <h2 id="card2-title">🔥 Curiosidade secreta</h2>
+        <p>Se você nomear uma ovelha como <strong>jeb_</strong>, ela exibirá um efeito de troca de cor contínua — um easter egg oficial do jogo.</p>
+      </article>
+
+      <article class="card" aria-labelledby="card3-title">
+        <h2 id="card3-title">🎮 Dica rápida</h2>
+        <p>Use uma abóbora na cabeça para olhar Endermen sem provocar ataques — é uma técnica útil em algumas situações.</p>
+      </article>
+
+      <article class="card card-support" aria-labelledby="card4-title">
+        <h2 id="card4-title">💚 Apoie o Ether Craft</h2>
+        <p>Links e recursos recomendados para jogadores de Minecraft.</p>
+        <p class="actions">
+          <a class="button" href="/recomendacoes.html" title="Ver recomendações de recursos para jogadores">Ver recomendações</a>
+        </p>
+      </article>
+    </section>
+
+    <section id="sobre" class="about" aria-labelledby="about-title">
+      <h2 id="about-title">Sobre</h2>
+      <p>Este site é uma coleção de curiosidades, dicas e referências para fãs de Minecraft. Criado por Kaleb — atualizado para melhores práticas de acessibilidade e performance.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>© 2025 — Ether Craft | Criado por Kaleb</p>
+    </div>
+  </footer>
+
+  <!-- Pequeno script de melhoria: evita que <a href="#"> role como navegação vazia se você trocar por "#" -->
+  <script>
+    // Desativa links vazios e fornece aviso acessível (se necessário).
+    document.addEventListener('click', function (e) {
+      const el = e.target.closest('a[href="#"]');
+      if (el) {
+        e.preventDefault();
+        el.setAttribute('aria-disabled', 'true');
+        el.textContent = el.textContent + ' (em breve)';
+      }
+    });
+  </script>
+</body>
+</html>
